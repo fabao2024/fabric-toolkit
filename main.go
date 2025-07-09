@@ -10,7 +10,7 @@ import (
 )
 
 func main() {
-	err := cli.Cli(version)
+	err := cli.Cli(Version)
 	if err != nil && !flags.WroteHelp(err) {
 		fmt.Printf("%s\n", err)
 		os.Exit(1)
