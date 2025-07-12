@@ -1,0 +1,2 @@
+Ollama Get "http://localhost:11434/api/tags": dial tcp 127.0.0.1:11434: connect: connection refused
+I'm sorry, I need more specific content to process. Could you please provide the text or content that you would like me to analyze?
