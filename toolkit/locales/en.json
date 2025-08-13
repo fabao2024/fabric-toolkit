@@ -1,0 +1,27 @@
+{
+    "lang_code": "en",
+    "idioma_nome": "English",
+    "menu": "🧠 FABRIC TOOLKIT - MENU\n-------------------------\n1. Manual input + extract_wisdom\n2. YouTube video transcription\n3. Website scraping (URL)\n4. List patterns (skills)\n5. Clear context\n6. Reset session\n0. Exit",
+    "explicacoes": {
+        "1": "✏️ Option 1: Manual input\nYou type a question or command, and the AI will respond based on the 'extract_wisdom' pattern.",
+        "2": "🎥 Option 2: Video transcription\nYou provide a YouTube video URL, and the AI will transcribe and summarize it.",
+        "3": "🌐 Option 3: Website scraping\nYou provide a URL, and the textual content will be extracted and analyzed by the AI.",
+        "4": "🎨 Option 4: List patterns\nThe AI will show all available skills (patterns).",
+        "5": "🧹 Option 5: Clear context\nThis removes the conversation history for the current session.",
+        "6": "🔄 Option 6: Reset session\nFully restarts the AI session."
+    },
+    "perguntas": {
+        "prompt": "\nEnter your prompt for Fabric:\n> ",
+        "url_video": "\n🎥 Paste the YouTube video URL:\n> ",
+        "url_site": "\nEnter the website URL:\n> "
+    },
+    "mensagens": {
+        "resposta_ia": "\n🧠 AI RESPONSE:\n",
+        "erro_execucao": "Error running Fabric command:\n",
+        "erro_yt": "\n❌ yt-dlp failed:",
+        "limpou_contexto": "\nContext cleared.",
+        "limpou_sessao": "\nSession reset.",
+        "opcao_invalida": "Invalid option.",
+        "pressione_enter": "\nPress Enter to continue..."
+    }
+}

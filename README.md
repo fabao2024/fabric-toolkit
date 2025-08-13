@@ -30,17 +30,56 @@ Os menus e mensagens seguirão o idioma escolhido, porém os resultados da IA se
 
 ---
 
-## 📦 Instalação
+## 🔧 Estrutura do Projeto
 
-Clone o repositório oficial com as adaptações:
+Este projeto é um toolkit baseado em Python que envolve o binário original `fabric` em Go. Ele fornece duas interfaces principais:
+
+1.  **CLI Interativa:** Uma interface de linha de comando simples e baseada em menus para facilitar a interação com o Fabric.
+2.  **UI Web com Streamlit:** Uma interface baseada na web para interações mais visuais (detalhes a serem adicionados).
+
+## 📦 Instalação e Uso
+
+### Pré-requisitos
+
+- Go (para compilar o binário `fabric`)
+- Python 3
+- `yt-dlp` (para transcrição de vídeo)
+
+### Compilando o binário `fabric`
+
+Antes de usar o toolkit, você precisa compilar o binário `fabric` em Go:
 
 ```bash
-git clone https://github.com/fabao2024/fabric-toolkit.git
-cd fabric-toolkit
-python3 -m venv venv
-source venv/bin/activate
-pip install -r requirements.txt
-python3 fabric_toolkit.py
+go build .
+```
+
+### Executando a CLI Interativa
+
+1.  Clone o repositório:
+    ```bash
+    git clone https://github.com/fabao2024/fabric-toolkit.git
+    cd fabric-toolkit
+    ```
+2.  Crie um ambiente virtual e instale as dependências:
+    ```bash
+    python3 -m venv venv
+    source venv/bin/activate
+    pip install -r requirements.txt
+    ```
+3.  Execute a aplicação CLI:
+    ```bash
+    python3 -m toolkit.main
+    ```
+
+## ⚙️ Configuração
+
+Você pode configurar o modelo de IA usado pelo toolkit editando o arquivo `toolkit/config.py`.
+
+```python
+# toolkit/config.py
+AI_MODEL = "gpt-4o" # Altere para o modelo desejado
+```
+
 🧑‍💻 Autor da Ferramenta
 Este projeto foi idealizado por Daniel Miessler e adaptado por fabao2024 para facilitar o uso por meio de um menu interativo CLI com suporte multilíngue.
 

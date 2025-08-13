@@ -30,15 +30,56 @@ Note: All AI responses (insights, summaries, etc.) are returned in English regar
 
 ---
 
-## 📦 Installation
+## 🔧 Project Structure
+
+This project is a Python-based toolkit that wraps the original `fabric` Go binary. It provides two main interfaces:
+
+1.  **Interactive CLI:** A simple, menu-driven command-line interface for easy interaction with Fabric.
+2.  **Streamlit Web UI:** A web-based interface for more visual interactions (details to be added).
+
+## 📦 Installation & Usage
+
+### Prerequisites
+
+- Go (to build the `fabric` binary)
+- Python 3
+- `yt-dlp` (for video transcription)
+
+### Building the `fabric` binary
+
+Before using the toolkit, you need to build the `fabric` Go binary:
 
 ```bash
-git clone https://github.com/fabao2024/fabric-toolkit.git
-cd fabric-toolkit
-python3 -m venv venv
-source venv/bin/activate
-pip install -r requirements.txt
-python3 fabric_toolkit.py
+go build .
+```
+
+### Running the Interactive CLI
+
+1.  Clone the repository:
+    ```bash
+    git clone https://github.com/fabao2024/fabric-toolkit.git
+    cd fabric-toolkit
+    ```
+2.  Create a virtual environment and install dependencies:
+    ```bash
+    python3 -m venv venv
+    source venv/bin/activate
+    pip install -r requirements.txt
+    ```
+3.  Run the CLI application:
+    ```bash
+    python3 -m toolkit.main
+    ```
+
+## ⚙️ Configuration
+
+You can configure the AI model used by the toolkit by editing the `toolkit/config.py` file.
+
+```python
+# toolkit/config.py
+AI_MODEL = "gpt-4o" # Change to your desired model
+```
+
 🙌 Credits
 This project is based on the brilliant work of Daniel Miessler and his Fabric project.
 
