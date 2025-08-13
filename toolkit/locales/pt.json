@@ -1,0 +1,27 @@
+{
+    "lang_code": "pt",
+    "idioma_nome": "Português",
+    "menu": "🧠 FABRIC TOOLKIT - MENU\n-------------------------\n1. Input manual + extract_wisdom\n2. Transcrição de vídeo do YouTube\n3. Scrape de site (URL)\n4. Listar padrões (skills)\n5. Limpar contexto\n6. Limpar sessão\n0. Sair",
+    "explicacoes": {
+        "1": "✏️ Opção 1: Input manual\nVocê digita uma pergunta ou comando e a IA responde com base no padrão 'extract_wisdom'.",
+        "2": "🎥 Opção 2: Transcrição de vídeo\nVocê fornece uma URL de vídeo do YouTube e a IA irá transcrevê-lo e resumi-lo.",
+        "3": "🌐 Opção 3: Scrape de site (URL)\nVocê fornece uma URL e o conteúdo textual será extraído e analisado pela IA.",
+        "4": "🎨 Opção 4: Listar padrões\nA IA mostrará todos os padrões (skills) disponíveis atualmente.",
+        "5": "🧹 Opção 5: Limpar contexto\nRemove o histórico de conversas da sessão atual.",
+        "6": "🔄 Opção 6: Limpar sessão\nReinicia completamente a sessão da IA."
+    },
+    "perguntas": {
+        "prompt": "\nDigite seu prompt para o Fabric:\n> ",
+        "url_video": "\n🎥 Cole a URL do vídeo do YouTube:\n> ",
+        "url_site": "\nDigite a URL do site:\n> "
+    },
+    "mensagens": {
+        "resposta_ia": "\n🧠 RESPOSTA DA IA:\n",
+        "erro_execucao": "Erro ao executar o comando Fabric:\n",
+        "erro_yt": "\n❌ yt-dlp falhou:",
+        "limpou_contexto": "\nContexto limpo.",
+        "limpou_sessao": "\nSessão limpa.",
+        "opcao_invalida": "Opção inválida.",
+        "pressione_enter": "\nPressione Enter para continuar..."
+    }
+}
